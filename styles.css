@@ -1,0 +1,133 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(217, 12%, 63%);
+  --medium-gray: hsl(216, 12%, 54%);
+  --dark-gray: hsl(216, 12%, 25%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue:  hsl(216, 12%, 8%);
+  --link-color: hsl(228, 45%, 44%);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  font-family: 'Overpass', sans-serif;
+  align-items: center;
+}
+
+h1 {
+  color: var(--white);
+  font-weight: 700;
+}
+
+p, label {
+  padding: 0;
+  margin: 0;
+  color: var(--medium-gray);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+button, svg {
+  display: block;
+  margin: auto;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0 none;
+  text-align: center;
+}
+
+input[type="radio"] {
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+button {
+  width: 325px;
+  height: 40px;
+  background-color: var(--orange);
+  color: var(--white);
+  font-weight: 700;
+  border-radius: 30px;
+  border: 0 none;
+  text-align: center;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox-centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-column {
+  flex-direction: column;
+}
+
+.card {
+  max-width: 350px;
+  padding: 30px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  text-align: left;
+}
+
+.circle {
+  margin-right: 13px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--very-dark-blue);
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.rating-button:hover + label {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.rating-button:checked + label {
+  background-color: var(--medium-gray);
+  color: var(--white)
+}
+
+.outline-text {
+  padding: 0 20px;
+  margin-top: 20px;
+  background-color: var(--dark-gray);
+  color: var(--orange);
+  border-radius: 20px;
+}
+
+.attribution {
+  margin: 10px 0;
+  color: var(--white);
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--link-color);
+}

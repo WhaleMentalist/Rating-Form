@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body class="flexbox flexbox-column flexbox-centered">
+  <div class="card flexbox flexbox-column">
+    <!-- Rating state start -->
+    <div id="rating">
+      <span class="circle flexbox flexbox-centered"><object data="./images/icon-star.svg"></object></span>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!</p>
+      <form id="rating-form" action="index.html" method="post">
+        <fieldset>
+          <input class="rating-button" type="radio" id="one-star" name="rating-form" value="1">
+          <label class="circle" for="one-star">1</label>
+          <input class="rating-button" type="radio" id="two-star" name="rating-form" value="2">
+          <label class="circle" for="two-star">2</label>
+          <input class="rating-button" type="radio" id="three-star" name="rating-form" value="3">
+          <label class="circle" for="three-star">3</label>
+          <input class="rating-button" type="radio" id="four-star" name="rating-form" value="4">
+          <label class="circle" for="four-star">4</label>
+          <input class="rating-button" type="radio" id="five-star" name="rating-form" value="5">
+          <label class="circle" for="five-star">5</label>
+        </fieldset>
+          <button type="submit" name="button">S U B M I T</button>
+      </form>
+    </div>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <div id="thank-you" class="flexbox flexbox-column flexbox-centered thank-you-container">
+      <span><object data="./images/illustration-thank-you.svg"></object></span>
+      <p id="rating-confirmation" class="outline-text">You selected %rating% out of 5</p>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!</p>
+    </div>
+    <!-- Thank you state end -->
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Spencer Daniel</a>.
+  </div>
+</body>
+</html>

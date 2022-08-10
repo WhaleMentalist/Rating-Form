@@ -15,6 +15,7 @@ $(document).ready(function() {
     $("#rating").hide(2000, function() {
       $("#thank-you").show(1000); // This will show the thank you window
     });
+    
     event.preventDefault(); // Prevent submission from posting
   });
 });

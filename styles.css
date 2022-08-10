@@ -28,7 +28,6 @@ p, label {
   font-size: 15px;
   font-weight: 400;
   line-height: 28px;
-  text-align: center;
 }
 
 button, svg {
@@ -137,6 +136,10 @@ button:hover {
   background-color: var(--dark-gray);
   color: var(--orange);
   border-radius: 20px;
+}
+
+.thank-you-text {
+  text-align: center;
 }
 
 .attribution {

@@ -4,6 +4,10 @@ $(document).ready(function() {
   // Detect submission on form
   $("#rating").submit(function(event) {
     let rating = $('input[name=rating-form]:checked', '#rating-form').val(); // Get rating value selected
+    if(rating === undefined) {
+      $("#error-msg").html("<span class='alert' id='msg'>You must choost at least one rating</span>");
+        return false;
+    }
 
     $("#rating-confirmation").text($("#rating-confirmation").text().replace("%rating%", rating)); // Replace marker with value user selected
 

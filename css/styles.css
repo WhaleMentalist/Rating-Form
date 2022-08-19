@@ -63,6 +63,7 @@ input[type="radio"] {
 }
 
 button {
+  cursor: pointer;
   width: 325px;
   height: 40px;
   background-color: var(--orange);
@@ -118,6 +119,10 @@ button:hover {
   line-height: 50px;
   border-radius: 50%;
   text-align: center;
+}
+
+.rating-button + label {
+  cursor:pointer;
 }
 
 .rating-button:hover + label {
